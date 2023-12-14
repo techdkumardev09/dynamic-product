@@ -1,0 +1,10 @@
+from django.contrib import admin
+
+from .models import *
+
+# Register your models here.
+
+admin.site.register(ProductCategory)
+admin.site.register(DynamicAttribute)
+admin.site.register(AttributeValueMapping)
+admin.site.register(Product)

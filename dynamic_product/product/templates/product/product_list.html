@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Product List</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        {% for attribute in attributes %}
+          <th>{{ attribute.name }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for product in products %}
+        <tr>
+          {% for attribute in attributes %}
+            <td>
+              {% for attribute_mapping in product.attribute_mappings.all %}
+                {% if attribute_mapping.attribute == attribute %}
+                  {{ attribute_mapping.value }}
+                {% endif %}
+              {% endfor %}
+            </td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
