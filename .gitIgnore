@@ -1,7 +1,0 @@
-.git/
-venv
-dynamic_product/__pycache*/
-.vscode/
-.idea/
-*.pyc
-*.pyo
