@@ -1,0 +1,17 @@
+# core
+django==4.2.8
+pillow==10.1.0
+
+# code fomatting
+black==22.8.0
+isort==5.10.1
+
+# db
+mysqlclient
+
+# processing
+pandas
+openpyxl
+
+# env
+python-dotenv>=0.19.1,<1.0
