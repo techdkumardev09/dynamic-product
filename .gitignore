@@ -1,0 +1,12 @@
+.git/
+venv
+env
+.env
+dynamic_product/__pycache*/
+dynamic_product/dynamic_product/__pycache*/
+__pycache__
+__pycache__/*
+.vscode/
+.idea/
+*.pyc
+*.pyo
